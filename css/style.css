@@ -40,6 +40,7 @@
         #F4A800 97%
     );
     --blue: #28A2D6;
+    --half-gray: #595959;
     --white: #FFFFFF;
     --white-gray: #F8F8F8;
     --light-gray: #B0B0B0;
@@ -257,17 +258,9 @@ link{font-family: var(--manrope);}
 
 /* Frandugo code */
 
-
-.home-banner{
-    img{
-        width: 100%;
-    }
-}
-
 .essential{
     padding: 100px 0;
     h2{
-        margin-bottom: 40px;
         line-height: 45px;
         span{
             color: var(--orange);
@@ -284,7 +277,7 @@ link{font-family: var(--manrope);}
         background: var(--white-gray);
         box-shadow: 0 0 0px 1px var(--light-gray);
         border-radius: 10px;
-        padding: 80px 40px;
+        padding: 80px 54px;
         img{ 
             height: 40px;
             margin-bottom: 15px; 
@@ -304,23 +297,28 @@ link{font-family: var(--manrope);}
 
 footer{
     background: var(--black);
-    padding: 80px 0;
+    padding: 80px 0 31px;
     .footer-container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 55px;
+        border-bottom: thin solid var(--dark-gray);
+        margin-bottom: 23px;
     }
     .footer-logo{
         img{
-            width: 250px;
+            width: 452px;
+            height: 173px;
+            transform: translateX(-71px);
         }
     }
     .footer-links{
         li{
-            margin-bottom: 20px;
+            margin-bottom: 32px;
             a{
                 color: var(--white);
                 display: block;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
                 text-transform: uppercase;
             }
         }
@@ -329,55 +327,109 @@ footer{
         h3{
             font-weight: 600;
             color: var(--white);
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 26px;
         }
         p{
-            margin-bottom: 40px;
+            margin-bottom: 21px;
+            font-size: 15px;
         }
         input{
-            width: 100%;
-            padding: 10px;
+            width: 72%;
+            padding: 11px 24px;
             border: none;
-            border-radius: 5px;
-            margin-bottom: 20px;
+            border-radius: 24px;
+            margin-bottom: 38px;
+            outline: none;
+        }
+        input::placeholder{
+            color: var(--light-gray);
         }
         button{
             background: var(--orange);
             color: var(--white);
-            padding: 10px 20px;
+            padding: 10px 52px;
             border: none;
-            border-radius: 5px;
+            border-radius: 24px;
             cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 0;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
         }
     }
+    .form-subscribe{position: relative;}
+    .redes-social {
+        display: flex;
+        gap: 7px;
+    }
+    .copyright{
+        p{
+            text-align: center;
+        }
+    }
+    /* .instagram {
+    }
+    .facebook {
+    }
+    .youtube {
+    } */
+    
 }
 
 
 /* Frandugo code end */
 
 
-.container-key-benefits {
+/* .container-key-benefits {
     height: 401px;
     background:url(../../assets/img/Mask.png);
     display: flex;    
     justify-content: space-between;
     align-items: center;
     border-radius: 15px;
-}
+} */
 /* .key-benefits__img {
 } */
-.key-benefits__info {padding-right: 45px;}
-.key-benefits__info h3{
-    font-size: 40px;
-    line-height: 48px;
-    padding-bottom: 38px;
+.key-benefits{
+    display: flex;
+    align-items: center;
+    background: var(--half-gray);
+    padding-right: 45px;
+    border-radius: 15px;
+    height: 318px;
+    position: relative; 
+    overflow: hidden; 
+   .key-benefits__info{
+        h3{
+            font-family: var(--logik-bold);
+            font-size: 35px;
+            line-height: 48px;
+            padding-bottom: 38px;
+            letter-spacing: 5px;
+        }
+    } 
+    .key-benefits__img {
+        position: relative;
+        flex: 1;
+        background: linear-gradient(to right, transparent, var(--half-gray)); 
+        border-radius: 15px 0 0 15px;
+        overflow: hidden;
+        img{
+            max-width: 100%;
+            height: 367px;
+            object-fit: cover; 
+            mask-image: linear-gradient(to right, black 70%, transparent 98%);
+        }  
+    }
 }
+
+
 
 .why-smoke-fire {padding-bottom: 60px;}
 .essential-scroll {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 65px;
     align-items: center;
 }
 .why-fire-scroll h3{
@@ -391,8 +443,9 @@ footer{
 }
 .btn--bk-gray {
     background-color: var(--white-gray);
-    padding: 10px 6px;
+    padding: 2px 6px;
     border-radius: 10px;
+    margin-right: 19px;
 }
 .btn--bk-orange {
     background-color: var(--white-gray);
@@ -483,3 +536,4 @@ footer{
     border-radius: 100px;
 }
 .card-choose__icons img{height: 44px;}
+
