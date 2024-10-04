@@ -206,11 +206,11 @@ link{font-family: var(--manrope);}
 .cards-fire {
     display: flex;
     gap: 16px;
-    justify-content: center;
+   flex-wrap: wrap;
 }
 .card-fire {padding-bottom: 20px;}
 .card-img img{
-    width: 300px;
+    width: 298px;
 }
 .card-info{
     position: relative;
@@ -283,7 +283,10 @@ link{font-family: var(--manrope);}
         border-radius: 10px;
         padding: 80px 40px;
         img{ margin-bottom: 30px; }
-        h3{ margin-bottom: 15px; }
+        h3{ 
+            margin-bottom: 15px; 
+            font-weight: 600;
+        }
     }
 }
 
@@ -409,31 +412,54 @@ footer{
     font-size: 15px;
     line-height: 19px;
 }
-.why-choose-fire {
+.why-choose {
     background: var(--gradient);
+    padding-top: 72px;
+    padding-bottom: 140px;
+    h3{
+        padding-bottom: 70px;
+        text-align: center;
+        font-size: 36px;
+    }
 }
 .cards-choose {
     display: flex;
-    gap: 10px;
+    gap: 25px;
+    flex-wrap: wrap;
+    span{
+        display: inline-block;
+        font-size: 19px;
+        line-height: 23px;
+        margin-bottom: 17px;
+        font-weight: 600;
+    }
+    p{
+        line-height: 21px;
+        font-size: 14px;
+    }
 }
+
 .card-choose {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    background: var(--white-gray);
+    border-radius: 17px;
 }
-/* .card-choose__img {
-} */
+  .card-choose__img img{
+    width: 290px;
+}  
 .card-choose__info {
     position: relative;
-    text-align: center;
+    padding: 63px 39px 65px;
 }
 .card-choose__icons {
     position: absolute;
-    left: 30px;
-    top: -23px;
+    left: 62px;
+    top: -35px;
     margin: auto;
     background: white;
-    padding: 3px 4px;
+    padding: 9px 10px;
     width: fit-content;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: 100px;
 }
-
+.card-choose__icons img{height: 44px;}
