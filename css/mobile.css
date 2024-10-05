@@ -215,7 +215,7 @@ footer{
         flex-wrap: wrap;
         justify-content: center;
     }
-    footer {
+    /* footer {
         .footer-container {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
@@ -230,11 +230,50 @@ footer{
                 transform: translateX(0px);
             }
         }
-        .footer-subscribe {display: none;}
+        .footer-subscribe {
+            h3,p,form{
+                display: none;
+            }
+        }
         .redes-social {
             display: flex;
             gap: 7px;
             justify-content: center;
+        }
+    } */
+    footer {
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding-bottom: 55px;
+            border-bottom: thin solid var(--dark-gray);
+            border-bottom: 0;
+            margin-bottom: 23px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .footer-logo {
+            grid-row: 2;
+            img{
+                height: 129px;
+                transform: translateX(0px);
+            }
+        }
+        .footer-subscribe{
+            h3,p,form{
+                display: none;
+            }
+        }
+        .redes-social {
+            display: flex;
+            gap: 7px;
+            justify-content: center;
+            padding-top: 37px;
+        }
+        .copyright {
+            p {
+                color: var(--white);
+            }
         }
     }
 }
@@ -372,7 +411,6 @@ footer{
                 transform: translateX(0px);
             }
         }
-        .footer-subscribe {display: none;}
         .redes-social {
             display: flex;
             gap: 7px;
@@ -381,6 +419,7 @@ footer{
     }
 }
 @media (max-width: 550px) {
+    .letter--medium{font-size: 24px;}
     .navbar {
         position: relative;
     }
@@ -520,20 +559,28 @@ footer{
             grid-template-columns: repeat(1, 1fr);
             padding-bottom: 55px;
             border-bottom: thin solid var(--dark-gray);
+            border-bottom: 0;
             margin-bottom: 23px;
             text-align: center;
+            padding-bottom: 20px;
         }
         .footer-logo {
             grid-row: 2;
             img{
+                height: 129px;
                 transform: translateX(0px);
             }
         }
-        .footer-subscribe {display: none;}
         .redes-social {
             display: flex;
             gap: 7px;
             justify-content: center;
+            padding-top: 37px;
+        }
+        .copyright {
+            p {
+                color: var(--white);
+            }
         }
     }
 }
