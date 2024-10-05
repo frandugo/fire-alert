@@ -102,17 +102,42 @@ body{
     display: flex;
     justify-content: center;
 }
-.menu-desktop{
+.navbar{
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--white);
     padding: 24px 0;
+    flex-wrap: wrap;
+    position: relative;
+    --icon-togle-menu: url('../assets/img/svg/bx-menu.svg');
+    --transform-menu-show: translate(-100%);
 }
 .menu-links{
     display: flex;
     gap: 18px;
     align-items: center;
+}
+.header-fire, .main-logo, .nav__toggle{
+    position: relative;
+    z-index: 10;
+}
+.nav__toggle{
+    display: none;
+    width: 60px;
+    height: 60px;
+    background-image: var(--icon-togle-menu);
+    background-size: contain; /* Para asegurarte de que el SVG se ajuste dentro del contenedor */
+    background-repeat: no-repeat; /* Para evitar que el SVG se repita */
+    background-position: center; /* Para centrar el SVG dentro del contenedor */
+    cursor: pointer;
+    transition: background-image .5s;
+}
+.nav__input{
+    display: none;
+    width: 40px;
+    height: 40px;
 }
 link{font-family: var(--manrope);} 
 .link--upper{text-transform: uppercase;}
@@ -200,6 +225,7 @@ link{font-family: var(--manrope);}
     line-height: 61px;
     padding-bottom: 30px;
 }
+.title-mobile{display: none;}
 .hero-fire__img  img{
     width: 560px;
 } 
@@ -208,6 +234,7 @@ link{font-family: var(--manrope);}
     display: flex;
     gap: 16px;
    flex-wrap: wrap;
+   justify-content: center;
 }
 .card-fire {padding-bottom: 20px;}
 .card-img img{
@@ -423,9 +450,6 @@ footer{
         }  
     }
 }
-
-
-
 .why-smoke-fire {padding-bottom: 60px;}
 .essential-scroll {
     display: flex;
@@ -456,7 +480,6 @@ footer{
 .btn--bk-orange:hover {
     background-color: var(--orange);
 }
-
 .btn--bk-orange:focus {
     background-color: var(--orange);
     outline: none; /* Evita el borde por defecto al enfocarse */
@@ -499,6 +522,7 @@ footer{
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
+    justify-content: center;
     span{
         display: inline-block;
         font-size: 19px;
@@ -511,7 +535,6 @@ footer{
         font-size: 14px;
     }
 }
-
 .card-choose {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     background: var(--white-gray);
@@ -536,4 +559,5 @@ footer{
     border-radius: 100px;
 }
 .card-choose__icons img{height: 44px;}
+/* Breakpoint-mobile */
 
