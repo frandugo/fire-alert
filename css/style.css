@@ -114,6 +114,12 @@ body{
     --icon-togle-menu: url('../assets/img/svg/bx-menu.svg');
     --transform-menu-show: translate(-100%);
 }
+.navbar:has(.nav__input:checked){
+    --icon-togle-menu: url('../assets/img/svg/bx-close.svg');
+    --transform-menu-show: translate(0);
+}
+.cart-mobile{display: none;}
+.title-desktop{display: block;}
 .menu-links{
     display: flex;
     gap: 18px;
@@ -128,9 +134,9 @@ body{
     width: 60px;
     height: 60px;
     background-image: var(--icon-togle-menu);
-    background-size: contain; /* Para asegurarte de que el SVG se ajuste dentro del contenedor */
-    background-repeat: no-repeat; /* Para evitar que el SVG se repita */
-    background-position: center; /* Para centrar el SVG dentro del contenedor */
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
     cursor: pointer;
     transition: background-image .5s;
 }
@@ -395,13 +401,6 @@ footer{
             text-align: center;
         }
     }
-    /* .instagram {
-    }
-    .facebook {
-    }
-    .youtube {
-    } */
-    
 }
 
 
