@@ -1,32 +1,185 @@
 /*plp*/
-
+@import url('style.css');
 .our-products {
     position: relative;
     background: url(./../assets/img/plp/hero-our-products.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 700px;
-    margin-bottom: 100px;
+    background-position: center;
+    margin-bottom: 40px;
+    padding-top: 65px;
+    padding-bottom: 284px;
 }
 
 .container-our-products{ 
-text-align: center;
-padding-top: 65px;
-    h2{
-    padding-bottom: 18px;
-    font-family: var(--logik-semibold);
-    }
-    p{
-    line-height: 26px;
-    padding-bottom: 36px;
-    font-size: 20px;
-    strong{font-weight: bold;}
-    }
-    a{
-    color: white;
-    font-weight: 500;
-    font-size: 20px;
-    border: none;
-    padding: 10px 52px;
-    }
+    text-align: center;
+        h2{
+        padding-bottom: 18px;
+        font-family: var(--logik-semibold);
+        }
+        p{
+        line-height: 26px;
+        padding-bottom: 36px;
+        font-size: 20px;
+        strong{font-weight: bold;}
+        }
+        a{
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        border: none;
+        padding: 10px 52px;
+        }
 } 
+
+/* .options-cards {
+   
+} */
+.container-options-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding-bottom: 40px;
+    border-bottom: thin solid var(--light-gray);
+    margin-bottom: 40px;
+}
+.option-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 17px;
+    cursor: pointer;
+}
+.option-card__icon {
+    position: relative;
+    background: white;
+    padding: 4px 5px;
+    width: fit-content;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+}
+.option-card__icon img{
+    height: 34px;
+    width: 34px;
+}
+.option-card__info {
+    h2{
+        font-size: 19px;
+        font-weight: 600;
+    }
+}
+
+/* .all-our-produts {
+} */
+.container-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url(../assets/img/banner-all-our.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 75px;
+    margin-bottom: 52px;
+    border-radius: 20px;
+}
+.banner__info {
+    h2{
+        line-height: 47px;
+        font-size: 33px;
+        font-family: 'logiksemibold';
+        span{
+            font-size: 33px;
+        }
+    }
+}
+.banner__list {
+    padding-top: 51px;
+    padding-left: 46px;
+    p{
+        line-height: 31px;
+        font-size: 20px;
+    }
+}
+.gallery-products{padding-bottom: 40px;}
+.container-gallery-products{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.mobile-filters {display: none;}
+/* .filter-dropdown {
+} */
+.gallery-products__filters {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 18px;
+    align-items: center;
+}
+.product__filter {
+    padding: 10px 15px 12px 16px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    cursor: pointer;
+}
+.icon-arrow{
+    position: relative;
+    padding: 10px 54px 12px 16px;
+}
+.icon-arrow::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/img/svg/arrow-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right -8px;
+    right: 9px;
+}
+.gallery-products__search{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 105px 12px 19px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    img{
+        height: 22px;
+    }
+}
+.input-search{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    &::placeholder{
+        color: #B0B0B0;
+    }
+}
+.gallery-products__cards {
+}
+.gallery-product__card {
+}
+.gallery-product__img {
+}
+.gallery-product__info {
+}
+.how-to-install {
+}
+.how-to-install__banner {
+    background: url(../assets/img/plp/bk-how-to-install.png);
+    padding-top: 48px;
+    padding-right: 188px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    border-radius: 0 17px 57px 17px;
+    background-size: contain;
+    h3{
+        font-size: 41px;
+        padding-bottom: 43px;
+        font-family: 'logiksemibold';
+        line-height: 51px;
+    }
+}
