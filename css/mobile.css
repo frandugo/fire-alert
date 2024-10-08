@@ -1,4 +1,4 @@
-.navbar{
+/* .navbar{
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -88,15 +88,9 @@ footer{
         p{
             text-align: center;
         }
-    }
-    /* .instagram {
-    }
-    .facebook {
-    }
-    .youtube {
-    } */
-    
-}
+    } 
+} */
+@import url('style.css');
 @media (max-width: 767px) {
     .navbar {
         position: relative;
@@ -165,6 +159,19 @@ footer{
         gap: 16px;
         flex-wrap: wrap;
         justify-content: center;
+        .card-fire {
+            padding-bottom: 20px;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 17px;
+        }
+        .card-info {
+            position: relative;
+            text-align: center;
+            border-inline: 0;
+            border-bottom: 0;
+            padding-bottom: 36px;
+            border-radius: 0px;
+        }
     }
     .home-banner{
         margin-inline: 103px;
