@@ -77,6 +77,12 @@ body{
 .title--dark-gray{color: var(--dark-gray);}
 .title--yellow {color: var(--yellow);}
 .title--orange{color: var(--orange);}
+.title--gradient{
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 41px;
+}
 .title--semibold {font-weight: 400;}
 .title--medium {font-weight:600;}
 .title--bold{font-weight: 700;}
@@ -90,6 +96,7 @@ body{
 .paragraph--medium{font-weight: 600;}
 .paragraph--white{color: var(--white);}
 .paragraph--gray{color: var(--gray);}
+.paragraph--semi{font-weight: 300;}
 .paragraph--semibold{font-weight: 400;}
 
 .letter--big{font-size: 40px;}
@@ -101,6 +108,10 @@ body{
     padding: 15px 0;
     display: flex;
     justify-content: center;
+    p{
+        letter-spacing: 2px;
+        font-size: 23px;
+    }
 }
 .navbar{
     position: relative;

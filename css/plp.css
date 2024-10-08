@@ -1,0 +1,32 @@
+/*plp*/
+
+.our-products {
+    position: relative;
+    background: url(./../assets/img/plp/hero-our-products.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 700px;
+    margin-bottom: 100px;
+}
+
+.container-our-products{ 
+text-align: center;
+padding-top: 65px;
+    h2{
+    padding-bottom: 18px;
+    font-family: var(--logik-semibold);
+    }
+    p{
+    line-height: 26px;
+    padding-bottom: 36px;
+    font-size: 20px;
+    strong{font-weight: bold;}
+    }
+    a{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    padding: 10px 52px;
+    }
+} 
