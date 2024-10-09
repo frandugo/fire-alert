@@ -103,7 +103,7 @@
         <section class="options-cards">
             <div class="container">
                 <div class="container-options-cards">
-                    <div class="option-card bk--red">
+                    <button class="option-card bk--red">
                         <div class="option-card__icon">
                             <img src="assets/img/svg/smoke-1.svg" alt="smoke alarms">
                         </div>
@@ -112,8 +112,8 @@
                                 Smoke alarms
                             </h2>
                         </div>
-                    </div>
-                    <div class="option-card bk--orange">
+                    </button>
+                    <button class="option-card bk--orange">
                         <div class="option-card__icon">
                             <img src="assets/img/svg/carbon-2.svg" alt="Carbon-monoxide">
                         </div>
@@ -122,8 +122,8 @@
                                 Carbon-monoxide Alarm
                             </h2>
                         </div>
-                    </div>
-                    <div class="option-card bk--yellow">
+                    </button>
+                    <button class="option-card bk--yellow">
                         <div class="option-card__icon">
                             <img src="assets/img/svg/heat-3.svg" alt="heat alarms">
                         </div>
@@ -132,8 +132,8 @@
                                 Heat alarms
                             </h2>
                         </div>
-                    </div>
-                    <div class="option-card bk--blue">
+                    </button>
+                    <button class="option-card bk--blue">
                         <div class="option-card__icon">
                             <img src="assets/img/svg/water-4.svg" alt="water alarms">
                         </div>
@@ -142,7 +142,7 @@
                                 water alarms
                             </h2>
                         </div>
-                    </div>
+                    </button>
                 </div>
             </div>
         </section>
@@ -157,15 +157,14 @@
                                 safety standards.   
                             </span>
                         </h2>
-                        
                     </div>
-                    <div class="banner__list">
+                    <!-- <div class="banner__list">
                         <p class="paragraph paragraph-dark-gray paragraph--semi">
                            Easy self-instalation <br>
                             Battery operated <br>
                             No wires 
                         </p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -175,31 +174,25 @@
                     <div class="mobile-filters">
                         <select id="filter-options" name="filter-options" class="filter-dropdown">
                             <option value="all-products">All Products</option>
-                            <option value="batery-life">Batery life</option>
-                            <option value="connectivity">Connectivity</option>
+                            <option value="batery-life">
+                                Batery life
+                                <img src="assets/img/svg/icon-arrow-up.svg" alt="arrow-up">
+                            </option>
+                            <option value="connectivity">
+                                Connectivity
+                                <img src="assets/img/svg/icon-arrow-up.svg" alt="arrow-up">
+                            </option>
+                            <option value="filter">
+                                Filter
+                                <img src="assets/img/svg/icon-arrow-up.svg" alt="arrow-up">
+                            </option>
                         </select>
                     </div>
                     <div class="gallery-products__filters">
-                        <div class="product__filter paragraph-bk--orange">
-                           <p class="paragraph paragraph--light-gray ">
-                                All products
-                           </p> 
-                        </div>
-                        <div class="product__filter paragraph-bk--orange icon-arrow">
-                            <p class="paragraph paragraph--light-gray ">
-                                Battery life
-                            </p>
-                        </div>
-                        <div class="product__filter paragraph-bk--orange icon-arrow">
-                            <p class="paragraph paragraph--light-gray ">
-                                Conectivity
-                            </p>
-                        </div>
-                        <div class="product__filter paragraph-bk--orange icon-arrow">
-                            <p class="paragraph paragraph--light-gray ">
-                                Filter
-                            </p>
-                        </div>
+                            <button class="filter-button paragraph-bk--orange" data-filter="all-products">All Products</button>
+                            <button class="filter-button paragraph-bk--orange icon-arrow" data-filter="battery-life">Battery Life</button>
+                            <button class="filter-button paragraph-bk--orange icon-arrow" data-filter="connectivity">Connectivity</button>
+                            <button class="filter-button paragraph-bk--orange icon-arrow" data-filter="filter">Filter</button>
                     </div>
                     <div class="gallery-products__search">
                         <img src="assets/img/svg/search.svg" alt="search">
@@ -213,16 +206,148 @@
                             <img src="assets/img/plp/fa-sa001.png" alt="fa-sa001">
                         </figure>
                         <div class="gallery-product__info">
-                            <span class="">FA-SA001</span>
-                            <h3 class="">
+                            <span class="title--orange">FA-SA001</span>
+                            <h3 class="title title--upper title--black">
                                 Photoelectric <br>
                                 Smoke Alarm
                             </h3>
-                            <span class="">
+                            <span class="title--dark-gray">
                                 5 years of batery life
                             </span>
-                            <p class="">$ 000.000</p>
-                            <a href="#">
+                            <p class="paragraph paragraph--orange">$ 000.000</p>
+                            <a href="#" class="btn btn--radius btn--light-gray">
+                                Buy now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-product__card">
+                        <figure class="gallery-product__img">
+                            <img src="assets/img/plp/fa-sa002.png" alt="fa-sa002">
+                        </figure>
+                        <div class="gallery-product__info">
+                            <span class="title--orange">FA-SA001</span>
+                            <h3 class="title title--upper title--black">
+                                Photoelectric <br>
+                                Smoke Alarm
+                            </h3>
+                            <span class="title--dark-gray">
+                                5 years of batery life
+                            </span>
+                            <p class="paragraph paragraph--orange">$ 000.000</p>
+                            <a href="#" class="btn btn--radius btn--light-gray">
+                                Buy now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-product__card">
+                        <figure class="gallery-product__img">
+                            <img src="assets/img/plp/fa-sa003.png" alt="fa-sa003">
+                        </figure>
+                        <div class="gallery-product__info">
+                            <span class="title--orange">FA-SA001</span>
+                            <h3 class="title title--upper title--black">
+                                Photoelectric <br>
+                                Smoke Alarm
+                            </h3>
+                            <span class="title--dark-gray">
+                                5 years of batery life
+                            </span>
+                            <p class="paragraph paragraph--orange">$ 000.000</p>
+                            <a href="#" class="btn btn--radius btn--light-gray">
+                                Buy now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-product__card">
+                        <figure class="gallery-product__img">
+                            <img src="assets/img/plp/fa-ha001.png" alt="fa-ha001">
+                        </figure>
+                        <div class="gallery-product__info">
+                            <span class="title--orange">FA-HA001</span>
+                            <h3 class="title title--upper title--black">
+                                Heat alarm
+                            </h3>
+                            <span class="title--dark-gray">
+                                5 years of batery life
+                            </span>
+                            <p class="paragraph paragraph--orange">$ 000.000</p>
+                            <a href="#" class="btn btn--radius btn--light-gray">
+                                Buy now
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gallery-product__card">
+                        <figure class="gallery-product__img">
+                            <img src="assets/img/plp/fa-sa001.png" alt="fa-sa001">
+                        </figure>
+                        <div class="gallery-product__info">
+                            <span class="title--orange">FA-SA041</span>
+                            <h3 class="title title--upper title--black">
+                                Interlinked <br>
+                                smoke alarm
+                            </h3>
+                            <span class="title--dark-gray">
+                                10 years of batery life
+                            </span>
+                            <p class="paragraph paragraph--orange">$ 000.000</p>
+                            <a href="#" class="btn btn--radius btn--light-gray">
+                                Buy now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-product__card">
+                        <figure class="gallery-product__img">
+                            <img src="assets/img/plp/fa-sa005w.png" alt="fa-sa005w">
+                        </figure>
+                        <div class="gallery-product__info">
+                            <span class="title--orange">FA-SA005W</span>
+                            <h3 class="title title--upper title--black">
+                                wifi smoke <br>
+                                alarm
+                            </h3>
+                            <span class="title--dark-gray">
+                                10 years of batery life
+                            </span>
+                            <p class="paragraph paragraph--orange">$ 000.000</p>
+                            <a href="#" class="btn btn--radius btn--light-gray">
+                                Buy now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-product__card">
+                        <figure class="gallery-product__img">
+                            <img src="assets/img/plp/fa-cm001.png" alt="fa-cm001">
+                        </figure>
+                        <div class="gallery-product__info">
+                            <span class="title--orange">FA-CM001</span>
+                            <h3 class="title title--upper title--black">
+                                Carbon monoxide <br>
+                                Alarm
+                            </h3>
+                            <span class="title--dark-gray">
+                                5 years of batery life
+                            </span>
+                            <p class="paragraph paragraph--orange">$ 000.000</p>
+                            <a href="#" class="btn btn--radius btn--light-gray">
+                                Buy now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-product__card">
+                        <figure class="gallery-product__img">
+                            <img src="assets/img/plp/fa-wa001.png" alt="fa-wa001">
+                        </figure>
+                        <div class="gallery-product__info">
+                            <span class="title--orange">FA-WA001</span>
+                            <h3 class="title title--upper title--black">
+                                Water alarm
+                            </h3>
+                            <span class="title--dark-gray">
+                                5 years of batery life
+                            </span>
+                            <p class="paragraph paragraph--orange">$ 000.000</p>
+                            <a href="#" class="btn btn--radius btn--light-gray">
                                 Buy now
                             </a>
                         </div>
@@ -233,15 +358,17 @@
         <section class="how-to-install">
             <div class="container">
                 <div class="how-to-install__banner">
-                    <h3 class="title title--upper title--white">
-                        How to install <br>
-                        <span class="title--yellow">
-                        smoke alarms
-                        </span>
-                    </h3>
-                    <a href="#" class="btn btn--big btn--radius btn--white">
-                        See more
-                    </a>
+                    <div class="how-to-install__info">
+                        <h3 class="title title--upper title--white">
+                            How to install <br>
+                            <span class="title--yellow">
+                            smoke alarms
+                            </span>
+                        </h3>
+                        <a href="#" class="btn btn--big btn--radius btn--white">
+                            See more
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
