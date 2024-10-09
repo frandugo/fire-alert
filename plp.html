@@ -172,21 +172,18 @@
             <div class="container">
                 <div class="container-gallery-products">
                     <div class="mobile-filters">
-                        <select id="filter-options" name="filter-options" class="filter-dropdown">
-                            <option value="all-products">All Products</option>
-                            <option value="batery-life">
-                                Batery life
-                                <img src="assets/img/svg/icon-arrow-up.svg" alt="arrow-up">
-                            </option>
-                            <option value="connectivity">
-                                Connectivity
-                                <img src="assets/img/svg/icon-arrow-up.svg" alt="arrow-up">
-                            </option>
-                            <option value="filter">
-                                Filter
-                                <img src="assets/img/svg/icon-arrow-up.svg" alt="arrow-up">
-                            </option>
-                        </select>
+                        <div class="custom-dropdown">
+                            <div class="selected-option">
+                                <span>Filter</span>
+                                <img src="assets/img/svg/icon-arrow-down.svg" alt="arrow-down">
+                            </div>
+                            <ul class="dropdown-options">
+                                <li data-value="all-products">All Products <img src="assets/img/svg/icon-arrow-up.svg" alt="arrow-up" class="no-class"></li>
+                                <li data-value="battery-life">Battery Life <img src="assets/img/svg/icon-arrow-up.svg" alt="arrow-up"></li>
+                                <li data-value="connectivity">Connectivity <img src="assets/img/svg/icon-arrow-up.svg" alt="arrow-up"></li>
+                                <li data-value="filter">Filter <img src="assets/img/svg/icon-arrow-up.svg" alt="arrow-up"></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="gallery-products__filters">
                             <button class="filter-button paragraph-bk--orange" data-filter="all-products">All Products</button>
@@ -430,6 +427,7 @@
                 </div>
             </div>
         </footer>
+       <script src="js/plp.js"></script>
     </main>
 </body>
 </html>

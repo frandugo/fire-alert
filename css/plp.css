@@ -155,10 +155,6 @@
         padding: 10px 52px;
         }
 } 
-
-/* .options-cards {
-   
-} */
 .container-options-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -197,9 +193,6 @@
         font-weight: 600;
     }
 }
-
-/* .all-our-produts {
-} */
 .container-banner {
     background: url(../assets/img/plp/banner-all-our.png);
     background-repeat: no-repeat;
@@ -803,26 +796,49 @@
     }
     .mobile-filters {
         display: block;
-        .filter-dropdown{
-            font-size: 14px;
+        .custom-dropdown {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .selected-option {
             display: flex;
+            gap: 17px;
             align-items: center;
-            gap: 5px;
-            padding: 14px;
+            padding: 10px 17px 11px 18px;
             box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
             border-radius: 7px;
-            border: none;
             color: var(--light-gray);
-            outline: none;
+            img{filter: opacity(0.3);}
         }
-        select {
-            -webkit-appearance: none; /* Safari y Chrome */
-            -moz-appearance: none; /* Firefox */
-            appearance: none; /* Otros navegadores modernos */
-            background: none; /* Elimina el fondo por defecto */
-            border: 1px solid #ccc; /* Opcional: personaliza el borde */
-            padding: 8px; /* Espaciado interno */
+        .dropdown-options {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: var(--white);
+            color: var(--gray);
+            border: none;
+            border-radius: 9px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            z-index: 10;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
         }
+        .dropdown-options li {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{filter: opacity(0.3);}
+        }
+        .dropdown-options li:hover {
+            background-color: #f0f0f0;
+        }
+        .no-class{display: none;}
+    
     }
     .gallery-products__filters {display: none;}
     .gallery-products__search {
