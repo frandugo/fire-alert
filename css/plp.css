@@ -189,17 +189,23 @@
     }
 }
 .container-banner {
+    display: flex;
+    align-items: center;
     background: url(../assets/img/plp/all-our-bk.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 80px;
     padding-left: 112px;
-    padding-bottom: 75px;
+    padding-right: 90px;
     margin-bottom: 52px;
     border-radius: 20px;
     position: relative;
+    .banner__img{
+        img{
+            width: 100%;
+        }
+    }
 }
-.container-banner::before{
+/* .container-banner::before{
     content: "";
     position: absolute;
     background: url(../assets/img/plp/all-our-banner.png);
@@ -210,7 +216,7 @@
     background-size: cover;
     background-position: right;
     right: 120px;
-}
+} */
 .banner__info {
     h2{
         line-height: 47px;
@@ -363,9 +369,8 @@
     }
     .all-our-products {margin-inline: 18px;} 
     .container-banner {
-        padding-top: 55px;
         padding-left: 37px;
-        padding-bottom: 52px;
+        padding-right: 53px;
         border-radius: 20px;
     }
     .container-banner::before {
@@ -374,10 +379,10 @@
     }
     .banner__info {
         h2{
-            line-height: 29px;
-            font-size: 23px;
+            line-height: 34px;
+            font-size: 26px;
             span{
-                font-size: 23px;
+                font-size: 26px;
             }
         }
     }
@@ -454,17 +459,16 @@
     .container-options-cards{grid-template-columns: repeat(2,1fr);}
     .all-our-products{margin-inline: 20px;}
     .container-banner {
-        padding-top: 43px;
         padding-left: 52px;
-        padding-bottom: 43px;
         margin-bottom: 52px;
+        padding-right: 32px;
         .banner__info {
             h2 {
-                line-height: 25px;
-                font-size: 20px;
+                line-height: 27px;
+                font-size: 23px;
             }
             span {
-                font-size: 20px;
+                font-size: 24px;
             }
         }
     }
