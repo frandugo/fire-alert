@@ -103,7 +103,7 @@
         <section class="options-cards">
             <div class="container">
                 <div class="container-options-cards">
-                    <button class="option-card bk--red">
+                    <a href="#" class="option-card bk--red">
                         <div class="option-card__icon">
                             <img src="assets/img/svg/smoke-1.svg" alt="smoke alarms">
                         </div>
@@ -112,8 +112,8 @@
                                 Smoke alarms
                             </h2>
                         </div>
-                    </button>
-                    <button class="option-card bk--orange">
+                    </a>
+                    <a  href="#" class="option-card bk--orange">
                         <div class="option-card__icon">
                             <img src="assets/img/svg/carbon-2.svg" alt="Carbon-monoxide">
                         </div>
@@ -122,8 +122,8 @@
                                 Carbon-monoxide Alarm
                             </h2>
                         </div>
-                    </button>
-                    <button class="option-card bk--yellow">
+                    </a>
+                    <a href="#"  class="option-card bk--yellow">
                         <div class="option-card__icon">
                             <img src="assets/img/svg/heat-3.svg" alt="heat alarms">
                         </div>
@@ -132,8 +132,8 @@
                                 Heat alarms
                             </h2>
                         </div>
-                    </button>
-                    <button class="option-card bk--blue">
+                    </a>
+                    <a  href="#" class="option-card bk--blue">
                         <div class="option-card__icon">
                             <img src="assets/img/svg/water-4.svg" alt="water alarms">
                         </div>
@@ -142,11 +142,11 @@
                                 water alarms
                             </h2>
                         </div>
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
-        <section class="all-our-produts">
+        <section class="all-our-products">
             <div class="container">
                 <div class="container-banner">
                     <div class="banner__info">
@@ -175,21 +175,39 @@
                         <div class="custom-dropdown"> 
                             <div class="selected-option">
                                 <span>Filter</span>
-                                <img src="assets/img/svg/icon-arrow-down.svg" alt="arrow-down">
+                                <img src="assets/img/svg/icon-arrow.svg" alt="arrow-down">
                             </div>
                             <ul class="dropdown-options">
-                                <li data-value="all-products">All Products <img src="assets/img/svg/icon-arrow-up.svg" alt="arrow-up" class="no-class"></li>
-                                <li data-value="battery-life">Battery Life <img src="assets/img/svg/icon-arrow-up.svg" alt="arrow-up"></li>
-                                <li data-value="connectivity">Connectivity <img src="assets/img/svg/icon-arrow-up.svg" alt="arrow-up"></li>
-                                <li data-value="filter">Filter <img src="assets/img/svg/icon-arrow-up.svg" alt="arrow-up"></li>
+                                <li data-value="all-products">All Products <img src="assets/img/svg/icon-arrow.svg" alt="arrow-up" class="no-class"></li>
+                                <li data-value="battery-life">Battery Life <img src="assets/img/svg/icon-arrow.svg" alt="arrow-up"></li>
+                                <li data-value="connectivity">Connectivity <img src="assets/img/svg/icon-arrow.svg" alt="arrow-up"></li>
+                                <li data-value="filter">Filter <img src="assets/img/svg/icon-arrow.svg" alt="arrow-up"></li>
                             </ul>
                         </div>
                     </div>
                     <div class="gallery-products__filters">
-                            <button class="filter-button paragraph-bk--orange" data-filter="all-products">All Products</button>
-                            <button class="filter-button paragraph-bk--orange icon-arrow" data-filter="battery-life">Battery Life</button>
-                            <button class="filter-button paragraph-bk--orange icon-arrow" data-filter="connectivity">Connectivity</button>
-                            <button class="filter-button paragraph-bk--orange icon-arrow" data-filter="filter">Filter</button>
+                        <select id="filter-options" name="filter-options" class="filter-button paragraph-bk--orange">
+                            <option value="all-products" selected>All Products</option>
+                        </select>
+                        <select  id="filter-options" name="filter-options" class="filter-button paragraph-bk--orange icon-arrow">
+                            <option value="all-products" selected>Battery Life</option>
+                            <option value="modal-1">Modal 1</option>
+                            <option value="modal-2">Modal 2</option>
+                            <option value="modal-3">Modal 3</option>
+                        </select>
+                        <select  id="filter-options" name="filter-options" class="filter-button paragraph-bk--orange icon-arrow">
+                            <option value="all-products" selected>  Connectivity</option>
+                            <option value="modal-1">Modal 1</option>
+                            <option value="modal-2">Modal 2</option>
+                            <option value="modal-3">Modal 3</option>
+                        </select>
+                        <select  id="filter-options" name="filter-options" class="filter-button paragraph-bk--orange icon-arrow">
+                            <option value="all-products" selected>Filter</option>
+                            <option value="modal-1">Modal 1</option>
+                            <option value="modal-2">Modal 2</option>
+                            <option value="modal-3">Modal 3</option>
+                        </select>
+
                     </div>
                     <div class="gallery-products__search">
                         <img src="assets/img/svg/search.svg" alt="search">
