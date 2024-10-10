@@ -83,7 +83,6 @@
 .letter--medium{font-size: 30px;}
 .letter-small{font-size: 16px;}
 
-
 .bk--red{
     transition: all .5s;
     &:hover{
@@ -131,7 +130,6 @@
     padding-top: 65px;
     padding-bottom: 284px;
 }
-
 .container-our-products{ 
     text-align: center;
         h2{
@@ -233,8 +231,8 @@
 }
 .gallery-products{padding-bottom: 40px;}
 .container-gallery-products{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     padding-bottom: 40px;
 }
 .mobile-filters {display: none;}
@@ -262,19 +260,12 @@
     background: var(--white) url('../assets/img/svg/icon-arrow.svg') no-repeat;
     background-position: right;
 }
-/* .icon-arrow::before{
+.icon-arrow::after{
     content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: var(--white) url('../assets/img/svg/icon-arrow.svg') no-repeat;
-    background-repeat: no-repeat;
-    background-position: right -2px;
-    right: 9px;
-    filter: opacity(0.3);
-} */
 
+}
 .gallery-products__search{
+    grid-column: 3;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -337,10 +328,6 @@
     }
 
 }
-/* .gallery-product__info {
-}
-.how-to-install {
-} */
 .how-to-install__banner {
     background: url(../assets/img/plp/bk-how-to-install.png);
     padding-top: 62px;
@@ -358,10 +345,6 @@
     }
     a{margin-right: 159px;}
 }
-
-
-
-
 
 @media (min-width: 961px) and (max-width: 1265px){
     .options-cards{margin-inline: 20px;}
@@ -399,8 +382,11 @@
         }
     }
     .gallery-products{margin-inline: 18px;}
+    .container-gallery-products{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 9px;
+    }
     .mobile-filters {display: none;}
-    .gallery-products__filters {grid-template-columns: auto auto;}
     /* .paragraph-bk--orange{
         transition: all .5s;
         &:hover{
@@ -487,14 +473,19 @@
         padding-bottom: 40px;
         margin-inline: 20px;
     }
+
+    .container-gallery-products {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 28px;
+    }
     .mobile-filters {display: none;}
     .gallery-products__filters {
-        display: grid;
         grid-template-columns: auto auto;
-        gap: 18px;
-        align-items: center;
     }
-    .gallery-products__search {padding: 10px 99px 12px 19px;}
+    .gallery-products__search {
+        padding: 10px 99px 12px 19px;
+        grid-column: 1;
+    }
     .gallery-products__cards {grid-template-columns: repeat(2, 1fr);}
     .how-to-install {
         margin-inline: 20px;
