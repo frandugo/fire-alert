@@ -150,6 +150,7 @@
         padding: 10px 52px;
         }
 } 
+.options-cards{margin-inline: 20px;}
 .container-options-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -264,11 +265,7 @@
 .icon-arrow{
     padding: 10px 54px 12px 16px;
     background: var(--white) url('../assets/img/svg/icon-arrow.svg') no-repeat;
-    background-position: right;
-}
-.icon-arrow::after{
-    content: "";
-
+    background-position: 95% center;
 }
 .gallery-products__search{
     grid-column: 3;
@@ -334,33 +331,46 @@
     }
 
 }
+.how-to-install{margin-inline: 20px;}
 .how-to-install__banner {
-    background: url(../assets/img/plp/bk-how-to-install.png);
-    padding-top: 62px;
-    padding-right: 230px;
-    padding-bottom: 200px;
-    background-repeat: no-repeat;
-    border-radius: 0 17px 57px 17px;
-    background-size: contain;
-    text-align: end;
-    h3{
-        font-size: 41px;
-        padding-bottom: 43px;
-        font-family: 'logiksemibold';
-        line-height: 51px;
+    display: flex;
+    background: url(../assets/img/plp/bg-how-to-install.png);
+    margin-bottom: 40px;
+    border-radius: 15px;
+    width: 100%;
+    overflow: hidden;
+    .how-to-install__info{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        h3{
+            font-size: 38px;
+            padding-bottom: 34px;
+            font-family: 'logiksemibold';
+            line-height: 47px;
+            letter-spacing: 9px;
+        }   
+        a{
+            padding: 9px 51px;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
     }
-    a{margin-right: 159px;}
+    .how-to-install__img{
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            mask-image: linear-gradient(to right, black 70%, transparent 98%);
+        }
+    }
 }
 
 @media (min-width: 961px) and (max-width: 1265px){
-    .options-cards{margin-inline: 20px;}
     .all-our-products{margin-inline: 20px;}
     .gallery-products{margin-inline: 20px;}
-    .how-to-install{margin-inline: 20px;}
 }
 @media (min-width: 768px) and (max-width: 960px){
     
-    .options-cards {margin-inline: 18px;} 
     .container-options-cards {
         grid-template-columns: repeat(2, 1fr);        
     }
@@ -389,49 +399,32 @@
     .gallery-products{margin-inline: 18px;}
     .container-gallery-products{
         grid-template-columns: repeat(1, 1fr);
-        gap: 9px;
+        gap: 23px;
     }
     .mobile-filters {display: none;}
-    /* .paragraph-bk--orange{
-        transition: all .5s;
-        &:hover{
-            background-color: var(--orange);
-            color: var(--white);
-            &.icon-arrow::before{
-                filter: invert(1);
-            }
-        }
-    } */
     .filter-button {
-        padding: 10px 15px 12px 16px;
-        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
-        border-radius: 7px;
-        border: none;
-        background: var(--white);
-        cursor: pointer;
-        color: var(--light-gray);
-        font-size: 17px;
     }
     .gallery-products__search{
         padding: 10px 0 12px 19px;
+        grid-column: 1;
         img{
             height: 22px;
         }
     }
     .gallery-products__cards {grid-template-columns: repeat(3,1fr);}
-    .how-to-install {margin-inline: 18px;}
     .how-to-install__banner {
-        padding-top: 28px;
-        padding-right: 71px;
-        h3{
-            font-size: 28px;
-            padding-bottom: 22px;
-            line-height: 35px;
-        }
-        a{
-            margin-right: 115px;
-            font-size: 15px;
-            padding: 10px 21px;
+        .how-to-install__info {
+            padding-right: 61px;
+            h3{
+                font-size: 31px;
+                padding-bottom: 22px;
+                line-height: 36px;
+                letter-spacing: 7px;
+            }
+            a{
+                padding: 11px 52px;
+                font-size: 15px;
+            }
         }
     }
 }
@@ -455,7 +448,6 @@
             font-size: 13px;
         }
     }
-    .options-cards{margin-inline: 20px;}
     .container-options-cards{grid-template-columns: repeat(2,1fr);}
     .all-our-products{margin-inline: 20px;}
     .container-banner {
@@ -495,34 +487,21 @@
         margin-inline: 20px;
     }
     .how-to-install__banner {
-        background: url(../assets/img/plp/bk-how-to-install.png);
-        padding-top: 28px;
-        padding-right: 99px;
-        padding-bottom: 200px;
-        background-repeat: no-repeat;
-        border-radius: 0 17px 57px 17px;
-        background-size: contain;
-        text-align: end;
-        h3{
-            font-size: 28px;
-            padding-bottom: 21px;
-            font-family: 'logiksemibold';
-            line-height: 38px;
-        }
-        a {
-            margin-right: 113px;
-            font-size: 14px;
-            padding: 8px 24px;
+        .how-to-install__info{
+            h3{
+                font-size: 27px;
+                line-height: 38px;
+                letter-spacing: 10px;
+            }
+            a {
+                padding: 10px 26px;
+                font-size: 13px;
+            }
         }
     }
 }
 @media (min-width: 320px) and (max-width: 579px){
     .our-products {
-        position: relative;
-        background: url(./../assets/img/plp/hero-our-products.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
         margin-bottom: 38px;
         padding-top: 32px;
         padding-bottom: 189px;
@@ -547,19 +526,9 @@
         }
     }
     .container-options-cards {
-        display: grid;
         grid-template-columns: repeat(1, 0.7fr);
-        gap: 24px;
         place-content: center;
-        padding-bottom: 40px;
-        border-bottom: thin solid var(--light-gray);
-        margin-bottom: 40px;
-        .option-card{
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            justify-content: normal;
-        }
+        .option-card{justify-content: normal;}
     }
     .options-cards{margin-inline: 35px;}
     .option-card__info {
