@@ -435,7 +435,6 @@ footer{
     .key-benefits__img {
         position: relative;
         flex: 1;
-        background: linear-gradient(to right, transparent, var(--half-gray)); 
         border-radius: 15px 0 0 15px;
         overflow: hidden;
         img{
