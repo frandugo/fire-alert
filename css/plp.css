@@ -1,5 +1,28 @@
-/*plp*/
-@import url('style.css');
+/* code style */
+@font-face {
+    font-family: 'logikwide_bold';
+    src: url('./../assets/fonts/logik-wide-webfont.woff2') format('woff2'),
+         url('./../assets/fonts/logik-wide-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'logikextended_medium';
+    src: url('./../assets/fonts/logik-extended-6-webfont.woff2') format('woff2'),
+         url('./../assets/fonts/logik-extended-6-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'logiksemibold';
+    src: url('./../assets/fonts/logik-6-webfont.woff2') format('woff2'),
+         url('./../assets/fonts/logik-6-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 :root{
     --yellow: #F4A800;
     --orange:  #F77F00;
@@ -83,6 +106,12 @@
 .letter--medium{font-size: 30px;}
 .letter-small{font-size: 16px;}
 
+link{font-family: var(--manrope);} 
+.link--upper{text-transform: uppercase;}
+.link--medium{font-size: 15px;} 
+.link--semibold{font-weight: 400;} 
+.link--light-gray{color:var(--light-gray)}
+
 .bk--red{
     transition: all .5s;
     &:hover{
@@ -119,6 +148,55 @@
         }
     }
 }
+.btn {
+    font-family: var(--manrope);
+    cursor: pointer;
+}
+.btn--upper{ text-transform: uppercase; }
+.btn--big {
+    font-size: 18px;
+    padding: 15px 45px;
+}
+.btn--medium{ padding: 12px 30px; }
+.btn--white {
+    background: none;
+    border-color: var(--white);
+    color: var(--white);
+    transition: 0.3s linear all;
+    &:hover{
+        background: var(--orange);
+        border-color: var(--white);
+    }
+}
+.btn--light-gray{
+    padding: 8px 20px;
+    border: thin solid var(--light-gray);
+}
+.btn--bold{font-weight: 800;}
+.btn--radius{ 
+    border-radius: 30px;
+    border: 1px solid;
+}
+.btn--gradient {background: var(--gradient);}
+.btn--transparant{
+    background-color: transparent;
+    border: none;
+}
+.action-buttons {
+    display: flex;
+    gap: 9px;
+}
+.search-btn {
+    border: none;
+    background: none;
+}
+.cart-btn {
+    border: none;
+    background: none;
+}
+.search-img{height: 28px;}
+.cart-img{height: 28px;}
+
 .navbar{
     position: relative;
     display: flex;
@@ -137,6 +215,109 @@
     gap: 18px;
     align-items: center;
 }
+.navbar:has(.nav__input:checked){
+    --icon-togle-menu: url('../assets/img/svg/bx-close.svg');
+    --transform-menu-show: translate(0);
+}
+.cart-mobile{display: none;}
+.header-fire, .main-logo, .nav__toggle{
+    position: relative;
+    z-index: 10;
+}
+.nav__toggle{
+    display: none;
+    width: 60px;
+    height: 60px;
+    background-image: var(--icon-togle-menu);
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    cursor: pointer;
+    transition: background-image .5s;
+}
+.nav__input{
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+footer{
+    background: var(--black);
+    padding: 80px 20px 31px;
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 55px;
+        border-bottom: thin solid var(--dark-gray);
+        margin-bottom: 23px;
+    }
+    .footer-logo{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .footer-links{
+        ul{
+            padding-left: 120px;
+           li{
+                margin-bottom: 32px;
+                a{
+                    color: var(--white);
+                    display: block;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                }
+            } 
+        }
+    }
+    .footer-subscribe{
+        h3{
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 15px;
+            font-size: 26px;
+        }
+        p{
+            margin-bottom: 21px;
+            font-size: 15px;
+        }
+        input{
+            width: 72%;
+            padding: 11px 24px;
+            border: none;
+            border-radius: 24px;
+            margin-bottom: 38px;
+            outline: none;
+        }
+        input::placeholder{
+            color: var(--light-gray);
+        }
+        button{
+            background: var(--orange);
+            color: var(--white);
+            padding: 10px 52px;
+            border: none;
+            border-radius: 24px;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 0;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+        }
+    }
+    .form-subscribe{position: relative;}
+    .redes-social {
+        display: flex;
+        gap: 7px;
+    }
+    .copyright{
+        p{
+            text-align: center;
+        }
+    }
+}
+/*plp*/
 .our-products {
     position: relative;
     background: url(./../assets/img/plp/hero-our-products.png);
@@ -382,83 +563,6 @@
             height: 100%;
             object-fit: cover;
             mask-image: linear-gradient(to right, black 70%, transparent 98%);
-        }
-    }
-}
-
-footer{
-    background: var(--black);
-    padding: 80px 20px 31px;
-    .footer-container{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding-bottom: 55px;
-        border-bottom: thin solid var(--dark-gray);
-        margin-bottom: 23px;
-    }
-    .footer-logo{
-        img{
-            width: 100%;
-            height: 100%;
-        }
-    }
-    .footer-links{
-        ul{
-            padding-left: 120px;
-           li{
-                margin-bottom: 32px;
-                a{
-                    color: var(--white);
-                    display: block;
-                    margin-bottom: 20px;
-                    text-transform: uppercase;
-                }
-            } 
-        }
-    }
-    .footer-subscribe{
-        h3{
-            font-weight: 600;
-            color: var(--white);
-            margin-bottom: 15px;
-            font-size: 26px;
-        }
-        p{
-            margin-bottom: 21px;
-            font-size: 15px;
-        }
-        input{
-            width: 72%;
-            padding: 11px 24px;
-            border: none;
-            border-radius: 24px;
-            margin-bottom: 38px;
-            outline: none;
-        }
-        input::placeholder{
-            color: var(--light-gray);
-        }
-        button{
-            background: var(--orange);
-            color: var(--white);
-            padding: 10px 52px;
-            border: none;
-            border-radius: 24px;
-            cursor: pointer;
-            position: absolute;
-            right: 0;
-            top: 0;
-            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-        }
-    }
-    .form-subscribe{position: relative;}
-    .redes-social {
-        display: flex;
-        gap: 7px;
-    }
-    .copyright{
-        p{
-            text-align: center;
         }
     }
 }
