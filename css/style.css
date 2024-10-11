@@ -22,10 +22,7 @@
     font-style: normal;
 
 }
-*{
-    list-style: none;
-    text-decoration: none;
-}
+
 :root{
     --yellow: #F4A800;
     --orange:  #F77F00;
@@ -413,7 +410,6 @@ footer{
     .key-benefits__img {
         position: relative;
         flex: 1;
-        background: linear-gradient(to right, transparent, var(--half-gray)); 
         border-radius: 15px 0 0 15px;
         overflow: hidden;
         img{
