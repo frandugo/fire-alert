@@ -435,7 +435,7 @@ footer{
     }
 }
 .gallery-products{
-    padding-bottom: 40px;
+    padding-bottom: 90px;
     margin-inline: 20px;
 }
 .container-gallery-products{
@@ -670,11 +670,7 @@ footer{
         }
     }
     .container-banner::before {right: 89px;}
-    .gallery-products {
-        padding-bottom: 40px;
-        margin-inline: 20px;
-    }
-
+    
     .container-gallery-products {
         grid-template-columns: repeat(1, 1fr);
         gap: 28px;
@@ -752,7 +748,7 @@ footer{
     .all-our-products{margin-inline: 20px;}
     .container-banner {display: none;}
     .gallery-products {
-        padding-bottom: 40px;
+        padding-bottom: 98px;
         margin-inline: 35px;
     }
     .container-gallery-products {
@@ -813,7 +809,7 @@ footer{
         .input-search {font-size: 13px;}
     }
     .gallery-products__cards {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         column-gap: 30px;
         row-gap: 21px;
         .gallery-product__card {

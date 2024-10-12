@@ -708,6 +708,9 @@ details[open] summary::after {
 @media (min-width: 320px) and (max-width: 579px){
     .container-products__options {
         justify-content: center;
+        a{
+            font-size: 12px;
+        }
     }
     .details-products__description {
         grid-template-columns: repeat(1, 1fr);
@@ -722,6 +725,19 @@ details[open] summary::after {
     }
     .cards-products__info {
         text-align: center;
+        h3{
+            font-size: 20px;
+        }
+        .span--medium{
+            font-size: 19px;
+        }
+        p{
+            font-size: 15px;
+        }
+        a{
+            padding: 10px 29px;
+            font-size: 21px;
+        }
         .cards-values {
             padding-bottom: 18px;
             justify-content: center;
@@ -732,9 +748,19 @@ details[open] summary::after {
     }
     .item-products__details {
         grid-template-columns: repeat(1, 1fr);
-        margin-inline: 20px;
+        margin-inline: 0px;
+        .item-product__detail{
+            img{width: 26%;}
+            .item-product__info{
+                span{font-size: 15px;}
+                p{font-size: 13px;}
+            }
+        }
     }
     .container-paramater {
+        .parameter-title{
+            h3{font-size: 25px;}
+        }
         .parameter-cards__icons {
             grid-template-columns: repeat(1, 1fr);
         }
@@ -765,11 +791,18 @@ details[open] summary::after {
         }
         .lorem-ipsum__info {
             padding-top: 46px;
+            span{font-size: 21px;}
+            h3{font-size: 32px;}
+            p{font-size: 14px;}
         }
     }
     .container-faq {
         h3 {
             text-align: center;        
+        }
+        summary{font-size: 14px;}
+        .accordion-content{
+            p{font-size: 13px;}
         }
     }
     .container-other-products {
