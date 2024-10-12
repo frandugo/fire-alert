@@ -21,7 +21,6 @@
             </div>
             <nav class="navbar">
                 <label class="nav__toggle">
-                    <!-- <img src="assets/img/svg/bx-menu.svg" alt=""> -->
                     <input type="checkbox" id="menu-input"
                     class="nav__input">
                 </label>
@@ -87,19 +86,23 @@
             </nav>
             
         </header>
+        <section class="options-details">
+                <div class="container">
+                    <div class="container-products__options">
+                        <a href="#" class="link link--upper link--light-gray link--border">
+                        Overview
+                        </a>
+                        <a href="#" class="link link--upper link--light-gray link--border">
+                            How to install
+                        </a>
+                        <a href="#" class="link link--upper link--light-gray link--border">
+                            Resources
+                        </a> 
+                    </div>
+                </div>
+        </section>
         <section class="details-products">
             <div class="container">
-                <div class="details-products__options">
-                    <a href="#" class="link link--gray link--border">
-                        Overview
-                    </a>
-                    <a href="#" class="link link--gray link--border">
-                        How to install
-                    </a>
-                    <a href="#" class="link link--gray link--border">
-                        Resources
-                    </a>
-                </div>
                 <div class="details-products__description">
                     <div class="cards-products__imgs">
                         <div class="cards-products__details">
@@ -122,29 +125,25 @@
                         <h3 class="title title--upper title--black">
                             Photoelectric Smoke Alarm
                         </h3>
-                        <span class="title--dark-gray title--upper">
+                        <span class="title--dark-gray title--upper span--medium">
                             5 years of batery life
                         </span>
                         <p class="paragraph paragraph--semi paragraph--gray">
-                            The unit is a photoelectric smoke alarm device.It is
-                            particularly sensitive for detecting visible micro­ particles (associated with smoldering fires) and reacts faster than ionization alarms. An example of such smoldering fires is a cigarette buming 
+                            The unit is a photoelectric smoke alarm device.It is <br>
+                            particularly sensitive for detecting visible micro­ particles (associated <br class="title-desktop">
+                            with smoldering fires) and reacts faster than ionization alarms. An <br class="title-desktop"> 
+                            example of such smoldering fires is a cigarette buming <br class="title-desktop">
                             in a couch or bedding, a common cause of devastating blazes.
                         </p>
                         <div class="cards-values">
-                            <div class="card-precie">
-                                <p class="paragraph paragraph--orange">$ 000.000</p>
-                            </div>
-                            <div class="card-quantity">
-                                <p class="">
-                                    Quantity
-                                </p>
-                                <button class="btn">
-                                    <img src="assets/img/svg/icon-max.svg" alt="max">
-                                </button>
-                                <input type="number" name="" id="">
-                                <button class="btn">
-                                    <img src="assets/img/svg/icon-min.svg" alt="min">
-                                </button>
+                            <div class="price-quantity-container">
+                                <span class="price paragraph paragraph--orange">$000.000</span>
+                                <div class="quantity-control">
+                                    <label for="quantity">Quantity:</label>
+                                    <button class="decrement">−</button>
+                                    <input type="number" id="quantity" value="1" min="1">
+                                    <button class="increment">+</button>
+                                </div>
                             </div>
                         </div>
                         <a href="#" class="btn btn--radius btn--light-gray">Add to cart</a>
@@ -175,13 +174,189 @@
                 </div>
             </div>
         </section>
+        <section class="product-parameter">
+            <div class="container">
+                <div class="container-paramater">
+                    <div class="parameter-title">
+                        <h3 class="title title--orange title--upper">Product parameter</h3>
+                    </div>
+                    <div class="parameter-cards__icons">
 
+                        <div class="parameter-card__icon">
+                            <div class="card__icon-img">
+                                <img src="assets/img/svg/icon-power-suply.svg" alt="power suply">
+                            </div>
+                            <div class="card__icon-info">
+                                <p class="paragraph paragraph--gray">Power supply: DC 9V replaceable battery</p>
+                            </div>
+                        </div>
+                        <div class="parameter-card__icon">
+                            <div class="card__icon-img">
+                                <img src="assets/img/svg/icon-size.svg" alt="size">
+                            </div>
+                            <div class="card__icon-info">
+                                <p class="paragraph paragraph--gray">Size:Φ101mm x 36mm</p>
+                            </div>
+                        </div>
 
+                        <div class="parameter-card__icon">
+                            <div class="card__icon-img">
+                                <img src="assets/img/svg/icon-alarm-volume.svg" alt="alarm volume">
+                            </div>
+                            <div class="card__icon-info">
+                                <p class="paragraph paragraph--gray">Alarm volume:≥85dB at 3m</p>
+                            </div>
+                        </div>
+                        <div class="parameter-card__icon">
+                            <div class="card__icon-img">
+                                <img src="assets/img/svg/icon-easy.svg" alt="easy to install">
+                            </div>
+                            <div class="card__icon-info">
+                                <p class="paragraph paragraph--gray">Easy to install with mounting bracket</p>
+                            </div>
+                        </div>
+
+                        <div class="parameter-card__icon">
+                            <div class="card__icon-img">
+                                <img src="assets/img/svg/icon-produce-life.svg" alt="produce life">
+                            </div>
+                            <div class="card__icon-info">
+                                <p class="paragraph paragraph--gray">Produce life time > 10 years</p>
+                            </div>
+                        </div>
+                        <div class="parameter-card__icon">
+                            <div class="card__icon-img">
+                                <img src="assets/img/svg/icon-low-battery.svg" alt="lower battery">
+                            </div>
+                            <div class="card__icon-info">
+                                <p class="paragraph paragraph--gray">Lower battery signal alarm</p>
+                            </div>
+                        </div>
+
+                        <div class="parameter-card__icon">
+                            <div class="card__icon-img">
+                                <img src="assets/img/svg/icon-general-paramater.svg" alt="ceiling mounting">
+                            </div>
+                            <div class="card__icon-info">
+                                <p class="paragraph paragraph--gray">Ceiling mounting</p>
+                            </div>
+                        </div>
+                        <div class="parameter-card__icon">
+                            <div class="card__icon-img">
+                                <img src="assets/img/svg/icon-general-paramater.svg" alt="conform">
+                            </div>
+                            <div class="card__icon-info">
+                                <p class="paragraph paragraph--gray">Conform to EN14604:2005/AC:2008</p>
+                            </div>
+                        </div>
+
+                        <div class="parameter-card__icon">
+                            <div class="card__icon-img">
+                                <img src="assets/img/svg/icon-general-paramater.svg" alt="safety">
+                            </div>
+                            <div class="card__icon-info">
+                                <p class="paragraph paragraph--gray">
+                                    Safety clip feature,not allow mounting <br>
+                                    without battery installed
+                                </p>
+                            </div>
+                        </div>
+                        <div class="parameter-card__icon">
+                            <div class="card__icon-img">
+                                <img src="assets/img/svg/icon-general-paramater.svg" alt="big test">
+                            </div>
+                            <div class="card__icon-info">
+                                <p class="paragraph paragraph--gray">Big test button for easily weekly testing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fire-kills">
+            <div class="container">
+                <div class="container-fire-kill">
+                    <h3 class="title title--upper title--orange">
+                        Fire kills
+                    </h3>
+                    <p class="title title--gray">You can <strong>prevent it.</strong></p>
+                </div>
+            </div>
+        </section>
+        <section class="lorem-ipsum">
+            <div class="container">
+                <div class="container-lorem-ipsum">
+                    <div class="lorem-ipsum__img">
+                        <img src="assets/img/pdp/lorem-ipsum-img.png" alt="video referente">
+                    </div>
+                    <div class="lorem-ipsum__info">
+                        <span class="title title--gray">Lorem ipsum dolor sit amet,</span>
+                        <h3 class="title title--orange">Lorem ipsum dolor sit amet,</h3>
+                        <p class="paragraph paragraph--gray paragraph--semi">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br  class="title-desktop">
+                            sed do eiusmod tempor incididunt ut labore et dolore <br class="title-desktop"> 
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud <br class="title-desktop"> 
+                            exercitation ullamco laboris nisi.
+                            <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br class="title-desktop">
+                            sed do eiusmod tempor incididunt ut labore et dolore <br class="title-desktop"> 
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud <br class="title-desktop"> 
+                            exercitation ullamco laboris nisi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="container">
+                <div class="container-faq">
+                    <h3 class="title title--upper title--orange">
+                        Faq's
+                    </h3>
+                    <details>
+                        <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</summary>
+                        <div class="accordion-content">
+                            <p>Este es el contenido de la Sección 1.</p>
+                        </div>
+                    </details>
+                
+                    <details>
+                        <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</summary>
+                        <div class="accordion-content">
+                            <p>Este es el contenido de la Sección 2.</p>
+                        </div>
+                    </details>
+                
+                    <details>
+                        <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</summary>
+                        <div class="accordion-content">
+                            <p>Este es el contenido de la Sección 3.</p>
+                        </div>
+                    </details> 
+                    
+                    <details>
+                        <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</summary>
+                        <div class="accordion-content">
+                            <p>Este es el contenido de la Sección 3.</p>
+                        </div>
+                    </details> 
+
+                    <details>
+                        <summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</summary>
+                        <div class="accordion-content">
+                            <p>Este es el contenido de la Sección 3.</p>
+                        </div>
+                    </details> 
+                </div>
+            </div>
+        </section>
         <section class="gallery-products">
             <div class="container">
-                <h3 class="title title--upper title--orange">
-                    Other products
-                </h3>
+                <div class="container-other-products">
+                    <h3 class="title title--upper title--orange">
+                        Other products
+                    </h3>
+                </div>
                 <div class="gallery-products__cards">
                     <div class="gallery-product__card">
                         <figure class="gallery-product__img">
