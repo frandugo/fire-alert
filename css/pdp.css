@@ -343,6 +343,7 @@ footer{
     grid-template-columns: 1fr 3fr;
     gap: 12px;
     align-items: center;
+    .card-product__detail{cursor: pointer;}
 }
 .options-details {
     background: var(--white-gray);
@@ -376,6 +377,7 @@ footer{
 .card-main__products{
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    cursor: pointer;
     img{
         width: 100%;
         object-fit: scale-down;
@@ -630,6 +632,9 @@ details[open] summary::after {
     }
     .cards-products__details {
         padding-inline: 2px;
+    }
+    .cards-products__info{
+        .title-desktop{display: none;}
     }
     .fire-kills {
         padding: 72px 0;
