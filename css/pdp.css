@@ -521,6 +521,10 @@ footer{
                 padding: 10px;
                 background: #EBEBEB;
                 border-radius: 7px;
+                img{
+                    width: 35px;
+                    object-fit: cover;
+                }
             }
             .card__icon-info {
                 p{line-height: 19px;}
