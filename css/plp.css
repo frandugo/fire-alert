@@ -73,7 +73,8 @@
 .title--orange{color: var(--orange);}
 .title--gradient{
     background: var(--gradient);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 41px;
 }
