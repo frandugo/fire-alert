@@ -338,15 +338,20 @@ footer{
         }
     }
     .footer-links{
-        li{
-            margin-bottom: 32px;
-            a{
-                color: var(--white);
-                display: block;
-                margin-bottom: 20px;
-                text-transform: uppercase;
-            }
+        display: block;
+        margin: 0 auto;
+        ul{
+            li{
+                margin-bottom: 32px;
+                a{
+                    color: var(--white);
+                    display: block;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                }
+            } 
         }
+        
     }
     .footer-subscribe{
         h3{
