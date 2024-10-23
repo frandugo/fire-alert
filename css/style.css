@@ -343,14 +343,18 @@ footer{
         }
     }
     .footer-links{
-        li{
-            margin-bottom: 32px;
-            a{
-                color: var(--white);
-                display: block;
-                margin-bottom: 20px;
-                text-transform: uppercase;
-            }
+        display: block;
+        margin: 0 auto;
+        ul{
+           li{
+                margin-bottom: 32px;
+                a{
+                    color: var(--white);
+                    display: block;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                }
+            } 
         }
     }
     .footer-subscribe{
@@ -399,21 +403,6 @@ footer{
         }
     }
 }
-
-
-/* Frandugo code end */
-
-
-/* .container-key-benefits {
-    height: 401px;
-    background:url(../../assets/img/Mask.png);
-    display: flex;    
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 15px;
-} */
-/* .key-benefits__img {
-} */
 .key-benefits{
     display: flex;
     align-items: center;
@@ -554,5 +543,4 @@ footer{
     border-radius: 100px;
 }
 .card-choose__icons img{height: 44px;}
-/* Breakpoint-mobile */
 
