@@ -266,8 +266,9 @@ footer{
         }
     }
     .footer-links{
+        display: block;
+        margin: 0 auto;
         ul{
-            padding-left: 120px;
            li{
                 margin-bottom: 32px;
                 a{

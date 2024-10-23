@@ -258,8 +258,9 @@ footer{
         }
     }
     .footer-links{
+        display: block;
+        margin: 0 auto;
         ul{
-            padding-left: 120px;
            li{
                 margin-bottom: 32px;
                 a{
@@ -623,13 +624,6 @@ footer{
             a{
                 padding: 11px 52px;
                 font-size: 15px;
-            }
-        }
-    }
-    footer {
-        & .footer-links {
-            ul {
-                padding-left: 80px;
             }
         }
     }
